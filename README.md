@@ -18,7 +18,7 @@ Before you begin, ensure you have met the following requirements:
 # Installation
 Clone the repository:
 
-git clone https://github.com/FifonsiDonald/simple-blogging-platform.git
+git clone https://github.com/FifonsiDonald/DailyJournal.git
 cd simple-blogging-platform
 
 Install project dependencies:
