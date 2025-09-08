@@ -6,6 +6,10 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
+const path = require("path");
+app.set("views", path.join(__dirname, "views"));
+
+
 mongoose
   .connect(
     "mongodb+srv://Fifonsi:iHw9ozYCvaXmCNKy@cluster0.o5mlfps.mongodb.net/?retryWrites=true&w=majority",
