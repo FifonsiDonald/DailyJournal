@@ -34,3 +34,41 @@
 	font-size: 12px;
   color: #fff;
 }
+
+.footer-btn {
+    position: fixed;
+    bottom: 100px; 
+    right: 50px;   
+    background: linear-gradient(135deg, #3fd6b5, #8ef7d1);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 22px 40px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 6px 25px rgba(63, 214, 181, 0.5), 0 0 35px rgba(142, 247, 209, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    animation: floaty 3s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.footer-btn:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #8ef7d1, #3fd6b5);
+    box-shadow: 0 8px 30px rgba(63, 214, 181, 0.7), 0 0 45px rgba(142, 247, 209, 0.6);
+}
+.footer-btn,
+.footer-btn:hover,
+.footer-btn:focus,
+.footer-btn:active {
+    text-decoration: none;
+}
