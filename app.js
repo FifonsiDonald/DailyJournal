@@ -82,6 +82,17 @@ app.post("/compose", function (req, res) {
 
   res.redirect("/");
 });
+app.post("/delete/:postId", function (req, res) {
+  const postId = req.params.postId;
+  Post.findByIdAndDelete(postId)
+    .then(() => {
+      res.redirect("/");
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect("/");
+    });
+});
 
 app.get("/posts/:postId", function (req, res) {
   const urlPost = _.lowerCase(req.params.newPostNum);

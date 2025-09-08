@@ -4,4 +4,8 @@
 
 <p><%= body %></p>  
 
+<form action="/delete/<%= postId %>" method="POST" style="margin-top:20px;">
+  <button type="submit" class="btn btn-danger">Delete Post</button>
+</form>
+
 <%- include("partials/footer") -%>
